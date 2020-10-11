@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MadLevel6Task1</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="color_fragment_label">Color Fragment</string>
+
+</resources>
