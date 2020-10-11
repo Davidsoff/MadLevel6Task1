@@ -1,0 +1,19 @@
+package nl.soffware.madlevel6task1.view_model
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import nl.soffware.madlevel6task1.model.ColorItem
+import nl.soffware.madlevel6task1.repository.ColorRepository
+
+class ColorViewModel : ViewModel(){
+    private val colorRepository = ColorRepository()
+
+    //use encapsulation to expose as LiveData
+    val colorItems: LiveData<List<ColorItem>>
+        get() = _colorItems
+
+    private val _colorItems = MutableLiveData<List<ColorItem>>().apply {
+        value = colorRepository.getColorItems()
+    }
+}

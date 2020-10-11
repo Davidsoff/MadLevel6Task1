@@ -3,5 +3,6 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="color_fragment_label">Color Fragment</string>
+    <string name="color">color</string>
 
 </resources>
